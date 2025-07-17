@@ -282,7 +282,6 @@ class ImprovedGoodReceiptOCR:
             'items': self.extract_items_from_multiple_texts(all_texts),
             'all_extracted_texts': all_texts  # For debugging
         }
-
         return result
 
     def save_to_excel(self, extracted_data: Dict, output_path: str = "good_receipt_clean.xlsx"):
